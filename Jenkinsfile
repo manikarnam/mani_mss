@@ -15,8 +15,12 @@ pipeline {
                  //customImage.push()
                  //customImage.pull()  
                  }
+                     
+             stage ('method calling'){
+           
                   customImage.push()
                   customImage.pull()  
+                     }
                 }
               }
             }
