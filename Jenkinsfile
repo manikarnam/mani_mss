@@ -13,7 +13,7 @@ pipeline {
                  def customImage = docker.build("maniengg/jenkins4evaljnlpslave")
                                  
                      
-                 customImage.run()   
+                 customImage.run('-p 8080:8087')   
                  customImage.push()
                  customImage.pull()   
    
