@@ -15,7 +15,8 @@ pipeline {
                  //customImage.push()
                  //customImage.pull()  
                  }
-   
+                  customImage.push()
+                  customImage.pull()  
                 }
               }
             }
