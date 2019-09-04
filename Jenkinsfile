@@ -11,6 +11,8 @@ pipeline {
                  docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
                  def customImage = docker.build("maniengg/jenkins4evaljnlpslave")
+                     customImage.push()
+                     customImage.pull()
                       .withRun('-p 3306:3306','jenkins-slave') {
                                   
                      }
