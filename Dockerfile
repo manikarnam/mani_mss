@@ -4,4 +4,4 @@ LABEL Description="This is a base image, which allows connecting Jenkins agents 
 
 COPY jenkins-slave /usr/local/bin/jenkins-slave
 EXPOSE 3306
-ENTRYPOINT ["/bin/bash",""jenkins-slave"]
+ENTRYPOINT ["/bin/bash","jenkins-slave"]
