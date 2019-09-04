@@ -12,15 +12,11 @@ pipeline {
 
                  def customImage = docker.build("maniengg/jenkins4evaljnlpslave")
                      
-                     docker.withDockerContainer(image: 'jenkins4evaljnlpslave', toolName: 'docker') {
-                            customImage.push()
+                    
+                 customImage.push()
                  customImage.pull()   
    
-                      }
-                  
-
-               
-                 }
+                }
               }
             }
          }
