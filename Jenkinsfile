@@ -13,7 +13,7 @@ pipeline {
                  def customImage = docker.build("maniengg/jenkins4evaljnlpslave")
                      customImage.push()
                      customImage.pull()
-                     customImage.withRun('-p 3306:3306','jenkins-slave') 
+                   def containera=docker.withRun('-p 3306:3306','jenkins-slave') 
                                   
                      
                 }
